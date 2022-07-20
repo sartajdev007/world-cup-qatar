@@ -13,6 +13,7 @@ body {
 main {
     margin-top: 130px;
     display: flex;
+    margin-bottom: 130px;
 }
 
 
@@ -48,16 +49,19 @@ a {
 .view-btn {
     display: inline-block;
     margin-top: 20px;
-    background-color: #0d9595;
     color: #f9f9f9;
     padding: 15px 30px;
-    background: #DD0000;
+    background: #2496c7;
     border-radius: 5px;
 }
 
 .view-btn .fa-angle-right {
     padding-left: 5px;
     padding-top: 2px;
+}
+
+.view-btn:hover {
+    background-color: #DD0000;
 }
 
 .bannner-img {
@@ -91,13 +95,14 @@ a {
 }
 
 #red-btn {
-    background-color: #DD0000;
+    background: #2496c7;
     color: seashell;
 }
 
-/* .sidebar-buttons a:hover {
+.sidebar-buttons a:hover {
     background-color: #DD0000;
-} */
+    color: #E8E8E8;
+}
 
 /* blogs style */
 #blog-section {
@@ -148,4 +153,42 @@ a {
 
 .views .blog-comments {
     padding-left: 30px;
+}
+
+/* footer section */
+#footer {
+    background-color: #16272f;
+    height: 444px;
+}
+
+.footer-section {
+    text-align: center;
+    padding-top: 130px;
+    color: antiquewhite;
+}
+
+.footer-section h3 {
+    font-size: 40px;
+}
+
+.footer-section hr {
+    margin: 40px;
+}
+
+.footer-menu a {
+    color: #B9B9B9;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media a {
+    text-align: center;
+    font-size: 30px;
+    color: #f9f9f9;
+    padding: 0px 15px;
 }
