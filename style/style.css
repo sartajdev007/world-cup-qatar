@@ -8,30 +8,32 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
+
+main {
+    margin-top: 130px;
+    display: flex;
+}
+
 
 h2 {
     font-size: 70px;
 }
 
-h4 {
+p {
     font-weight: 200;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* header styles */
 #header {
     background-color: #161616;
     color: beige;
-    width: 100%;
-    height: 646px;
     border-radius: 30px;
-    /* display: flex;
-    align-items: center;
-    justify-content: flex-end; */
-    /* padding: 5%; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
@@ -43,16 +45,11 @@ h4 {
     padding-bottom: 20px;
 }
 
-.header-title a {
-    text-decoration: none;
-    color: white;
+.view-btn {
     display: inline-block;
     margin-top: 20px;
-
-}
-
-.view-btn {
     background-color: #0d9595;
+    color: #f9f9f9;
     padding: 15px 30px;
     background: #DD0000;
     border-radius: 5px;
@@ -68,8 +65,87 @@ h4 {
 }
 
 .bannner-img img {
-    display: inline-block;
     width: 581px;
-    height: 646px;
-    padding-bottom: -30px;
+}
+
+/* sidebar style */
+#sidebar {
+    width: 312px;
+}
+
+.sidebar-buttons {
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.side-button {
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 15px 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+}
+
+#red-btn {
+    background-color: #DD0000;
+    color: seashell;
+}
+
+/* .sidebar-buttons a:hover {
+    background-color: #DD0000;
+} */
+
+/* blogs style */
+#blog-section {
+    padding-left: 24px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+}
+
+.blog {
+    width: 312px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.blog-thumbnail img {
+    width: 312px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.blog-info {
+    padding: 20px 10px;
+}
+
+.blog-info a {
+    border: 1px solid;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: #161616;
+}
+
+.blog-info h3 {
+    padding-top: 20px;
+}
+
+.views {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+.views .blog-comments {
+    padding-left: 30px;
 }
