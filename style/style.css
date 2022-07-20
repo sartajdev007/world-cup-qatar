@@ -32,7 +32,7 @@ a {
 
 /* header styles */
 #header {
-    background-color: #161616;
+    background: #161616;
     color: beige;
     border-radius: 30px;
     display: grid;
@@ -104,10 +104,14 @@ a {
     color: #E8E8E8;
 }
 
+
+
 /* blogs style */
 #blog-section {
     padding-left: 24px;
 }
+
+
 
 .blogs {
     display: grid;
@@ -191,4 +195,67 @@ a {
     font-size: 30px;
     color: #f9f9f9;
     padding: 0px 15px;
+}
+
+/* Matches Style */
+#new-matches {
+    padding-left: 24px;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+}
+
+.match {
+    width: 252px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.countries {
+    display: flex;
+    justify-content: space-between;
+}
+
+.match-details {
+    padding-top: 15px;
+}
+
+.match-details p {
+    padding-top: 15px;
+}
+
+span {
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+/* Responsive Design */
+/* Medium Devices */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sidebar {
+        width: 312px;
+    }
+
+    .sidebar-buttons {
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #ffff;
+    }
+
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
